@@ -1,0 +1,15 @@
+asgiref==3.4.0
+async-exit-stack==1.0.1
+async-generator==1.10
+certifi==2021.5.30
+click==8.0.1
+colorama==0.4.4
+fastapi==0.65.2
+greenlet @ file:///C:/ci/greenlet_1620913825737/work
+h11==0.12.0
+pydantic==1.8.2
+SQLAlchemy @ file:///C:/ci/sqlalchemy_1624590519749/work
+starlette==0.14.2
+typing-extensions==3.10.0.0
+uvicorn==0.14.0
+wincertstore==0.2
