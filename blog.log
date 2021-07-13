@@ -1,0 +1,432 @@
+INFO 2021-07-10 19:15:55,461 - Started server process [10372]
+INFO 2021-07-10 19:15:55,461 - Waiting for application startup.
+INFO 2021-07-10 19:15:55,462 - Application startup complete.
+INFO 2021-07-10 19:15:55,463 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO 2021-07-10 19:16:35,552 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+INFO 2021-07-10 19:17:17,245 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+INFO 2021-07-10 19:19:16,978 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+INFO 2021-07-10 19:19:49,240 - Shutting down
+INFO 2021-07-10 19:19:49,349 - Waiting for application shutdown.
+INFO 2021-07-10 19:19:49,349 - Application shutdown complete.
+INFO 2021-07-10 19:19:49,350 - Finished server process [10372]
+INFO 2021-07-10 19:20:01,890 - Started server process [19144]
+INFO 2021-07-10 19:20:01,891 - Waiting for application startup.
+INFO 2021-07-10 19:20:01,891 - Application startup complete.
+INFO 2021-07-10 19:20:08,739 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+ERROR 2021-07-10 19:20:08,793 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 222, in app
+    response_data = await serialize_response(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 127, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for Page[Blog]
+response
+  value is not a valid dict (type=type_error.dict)
+INFO 2021-07-10 19:21:07,157 - Started server process [14552]
+INFO 2021-07-10 19:21:07,158 - Waiting for application startup.
+INFO 2021-07-10 19:21:07,158 - Application startup complete.
+INFO 2021-07-10 19:22:07,304 - Started server process [8952]
+INFO 2021-07-10 19:22:07,305 - Waiting for application startup.
+INFO 2021-07-10 19:22:07,305 - Application startup complete.
+INFO 2021-07-10 19:22:17,787 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+ERROR 2021-07-10 19:22:17,791 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 222, in app
+    response_data = await serialize_response(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 127, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for Page[Blog]
+response
+  value is not a valid dict (type=type_error.dict)
+INFO 2021-07-10 19:23:18,101 - Started server process [16036]
+INFO 2021-07-10 19:23:18,102 - Waiting for application startup.
+INFO 2021-07-10 19:23:18,103 - Application startup complete.
+INFO 2021-07-10 19:23:38,887 - <models.Blog object at 0x00000275ED8D6280>
+INFO 2021-07-10 19:24:35,582 - Started server process [8564]
+INFO 2021-07-10 19:24:35,583 - Waiting for application startup.
+INFO 2021-07-10 19:24:35,584 - Application startup complete.
+INFO 2021-07-10 19:24:52,250 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+INFO 2021-07-10 19:25:09,492 - items=[Blog(title='this is update to id 2', body='updated string'), Blog(title='this is a blog test', body='testing')] total=2 page=1 size=50
+INFO 2021-07-10 20:01:01,381 - Started server process [11640]
+INFO 2021-07-10 20:01:01,381 - Waiting for application startup.
+INFO 2021-07-10 20:01:01,382 - Application startup complete.
+INFO 2021-07-10 20:01:34,372 - <models.Blog object at 0x0000021F06CE8AC0>
+INFO 2021-07-10 20:02:15,762 - Started server process [2032]
+INFO 2021-07-10 20:02:15,763 - Waiting for application startup.
+INFO 2021-07-10 20:02:15,763 - Application startup complete.
+INFO 2021-07-10 20:02:44,804 - <models.Blog object at 0x0000017DC4478AC0>
+INFO 2021-07-10 20:03:17,841 - Started server process [18128]
+INFO 2021-07-10 20:03:17,842 - Waiting for application startup.
+INFO 2021-07-10 20:03:17,843 - Application startup complete.
+DEBUG 2021-07-10 20:03:53,947 - <models.Blog object at 0x00000258999C8AC0>
+WARNING 2021-07-10 20:04:46,479 - 404
+ERROR 2021-07-10 20:04:46,481 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\roshan\Documents\FAST\blog\.\main.py", line 71, in show
+    raise logger.warning(HTTPException(status.HTTP_404_NOT_FOUND, detail=f'blog with {id} is not available'))
+TypeError: exceptions must derive from BaseException
+INFO 2021-07-10 20:06:17,087 - Started server process [19396]
+INFO 2021-07-10 20:06:17,088 - Waiting for application startup.
+INFO 2021-07-10 20:06:17,089 - Application startup complete.
+ERROR 2021-07-10 20:06:30,942 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\roshan\Documents\FAST\blog\.\main.py", line 71, in show
+    raise logger.warning(HTTPException(status.HTTP_404_NOT_FOUND, detail=f'blog with {id} is not available'),
+TypeError: exceptions must derive from BaseException
+INFO 2021-07-10 20:07:43,218 - Started server process [8896]
+INFO 2021-07-10 20:07:43,219 - Waiting for application startup.
+INFO 2021-07-10 20:07:43,219 - Application startup complete.
+WARNING 2021-07-10 20:07:54,136 - 404
+INFO 2021-07-10 20:08:26,344 - Started server process [19084]
+INFO 2021-07-10 20:08:26,344 - Waiting for application startup.
+INFO 2021-07-10 20:08:26,345 - Application startup complete.
+ERROR 2021-07-10 20:08:30,770 - 404
+INFO 2021-07-10 20:09:10,058 - Started server process [8020]
+INFO 2021-07-10 20:09:10,059 - Waiting for application startup.
+INFO 2021-07-10 20:09:10,060 - Application startup complete.
+INFO 2021-07-10 20:09:55,947 - Started server process [16868]
+INFO 2021-07-10 20:09:55,948 - Waiting for application startup.
+INFO 2021-07-10 20:09:55,948 - Application startup complete.
+INFO 2021-07-10 20:10:22,875 - Started server process [9512]
+INFO 2021-07-10 20:10:22,875 - Waiting for application startup.
+INFO 2021-07-10 20:10:22,876 - Application startup complete.
+ERROR 2021-07-10 20:10:32,423 - (404, 'blog with 25 is not available')
+INFO 2021-07-10 20:20:07,263 - Started server process [18012]
+INFO 2021-07-10 20:20:07,263 - Waiting for application startup.
+INFO 2021-07-10 20:20:07,264 - Application startup complete.
+INFO 2021-07-10 20:21:30,958 - Started server process [15996]
+INFO 2021-07-10 20:21:30,959 - Waiting for application startup.
+INFO 2021-07-10 20:21:30,959 - Application startup complete.
+DEBUG 2021-07-10 20:22:53,131 - <models.Blog object at 0x000001D568DCB880>
+INFO 2021-07-10 20:23:27,065 - Started server process [4408]
+INFO 2021-07-10 20:23:27,066 - Waiting for application startup.
+INFO 2021-07-10 20:23:27,066 - Application startup complete.
+INFO 2021-07-10 20:24:19,388 - Started server process [17404]
+INFO 2021-07-10 20:24:19,388 - Waiting for application startup.
+INFO 2021-07-10 20:24:19,390 - Application startup complete.
+INFO 2021-07-10 20:25:57,161 - Started server process [12760]
+INFO 2021-07-10 20:25:57,162 - Waiting for application startup.
+INFO 2021-07-10 20:25:57,162 - Application startup complete.
+INFO 2021-07-10 20:26:15,299 - Started server process [5644]
+INFO 2021-07-10 20:26:15,300 - Waiting for application startup.
+INFO 2021-07-10 20:26:15,300 - Application startup complete.
+INFO 2021-07-10 20:26:17,924 - a new blog is created
+INFO 2021-07-10 20:26:42,505 - Started server process [13456]
+INFO 2021-07-10 20:26:42,506 - Waiting for application startup.
+INFO 2021-07-10 20:26:42,506 - Application startup complete.
+INFO 2021-07-10 20:28:10,320 - Started server process [8632]
+INFO 2021-07-10 20:28:10,321 - Waiting for application startup.
+INFO 2021-07-10 20:28:10,322 - Application startup complete.
+INFO 2021-07-10 20:30:36,397 - Started server process [16052]
+INFO 2021-07-10 20:30:36,397 - Waiting for application startup.
+INFO 2021-07-10 20:30:36,398 - Application startup complete.
+INFO 2021-07-10 20:44:44,737 - Started server process [6252]
+INFO 2021-07-10 20:44:44,737 - Waiting for application startup.
+INFO 2021-07-10 20:44:44,738 - Application startup complete.
+INFO 2021-07-10 20:44:46,387 - Shutting down
+INFO 2021-07-10 20:44:46,492 - Waiting for application shutdown.
+INFO 2021-07-10 20:44:46,493 - Application shutdown complete.
+INFO 2021-07-10 20:44:46,493 - Finished server process [6252]
+INFO 2021-07-10 20:45:28,224 - Started server process [5712]
+INFO 2021-07-10 20:45:28,224 - Waiting for application startup.
+INFO 2021-07-10 20:45:28,225 - Application startup complete.
+ERROR 2021-07-10 20:45:52,596 - (404, 'blog with id  25 is not available, Wrong id provided')
+INFO 2021-07-10 20:47:18,960 - Started server process [17828]
+INFO 2021-07-10 20:47:18,961 - Waiting for application startup.
+INFO 2021-07-10 20:47:18,961 - Application startup complete.
+INFO 2021-07-10 20:47:31,395 - Started server process [12424]
+INFO 2021-07-10 20:47:31,396 - Waiting for application startup.
+INFO 2021-07-10 20:47:31,396 - Application startup complete.
+INFO 2021-07-10 20:49:50,336 - Started server process [7868]
+INFO 2021-07-10 20:49:50,336 - Waiting for application startup.
+INFO 2021-07-10 20:49:50,337 - Application startup complete.
+INFO 2021-07-10 20:51:45,560 - Started server process [9764]
+INFO 2021-07-10 20:51:45,560 - Waiting for application startup.
+INFO 2021-07-10 20:51:45,561 - Application startup complete.
+INFO 2021-07-10 22:10:45,802 - Shutting down
+INFO 2021-07-10 22:10:45,914 - Waiting for application shutdown.
+INFO 2021-07-10 22:10:45,915 - Application shutdown complete.
+INFO 2021-07-10 22:10:45,915 - Finished server process [9764]INFO 2021-07-10 23:32:36,954 - Started server process [7932]
+INFO 2021-07-10 23:32:36,994 - Waiting for application startup.
+INFO 2021-07-10 23:32:36,995 - Application startup complete.
+INFO 2021-07-10 23:32:57,828 - displaying blogs
+ERROR 2021-07-10 23:32:57,832 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\roshan\Documents\FAST\blog\.\main.py", line 57, in get_blogs
+    return paginate(db.query(models.Blog) == 2)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi_pagination\paginator.py", line 18, in paginate
+    items=sequence[raw_params.offset : raw_params.offset + raw_params.limit],
+TypeError: 'bool' object is not subscriptable
+INFO 2021-07-10 23:33:19,530 - Started server process [18256]
+INFO 2021-07-10 23:33:19,531 - Waiting for application startup.
+INFO 2021-07-10 23:33:19,531 - Application startup complete.
+INFO 2021-07-10 23:33:36,830 - displaying blogs
+INFO 2021-07-10 23:33:50,131 - displaying blogs
+INFO 2021-07-10 23:41:05,637 - Shutting down
+INFO 2021-07-10 23:41:05,747 - Waiting for application shutdown.
+INFO 2021-07-10 23:41:05,748 - Application shutdown complete.
+INFO 2021-07-10 23:41:05,749 - Finished server process [18256]
+INFO 2021-07-10 23:44:06,270 - Started server process [15912]
+INFO 2021-07-10 23:44:06,270 - Waiting for application startup.
+INFO 2021-07-10 23:44:06,271 - Application startup complete.
+INFO 2021-07-10 23:56:36,005 - displaying blogs
+INFO 2021-07-10 23:57:15,782 - displaying blogs
+INFO 2021-07-10 23:58:42,588 - Started server process [14884]
+INFO 2021-07-10 23:58:42,589 - Waiting for application startup.
+INFO 2021-07-10 23:58:42,590 - Application startup complete.
+INFO 2021-07-10 23:59:02,593 - displaying blogs
+ERROR 2021-07-10 23:59:02,622 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\roshan\Documents\FAST\blog\.\main.py", line 57, in get_blogs
+    return paginate(db.query(models.Blog))
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi_pagination\paginator.py", line 19, in paginate
+    total=length_function(sequence),
+TypeError: object of type 'Query' has no len()
+INFO 2021-07-10 23:59:34,635 - Started server process [15868]
+INFO 2021-07-10 23:59:34,636 - Waiting for application startup.
+INFO 2021-07-10 23:59:34,637 - Application startup complete.
+INFO 2021-07-10 23:59:43,209 - displaying blogs
+ERROR 2021-07-10 23:59:43,212 - Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\fastapi\routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "c:\users\roshan\anaconda3\envs\fast\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\roshan\Documents\FAST\blog\.\main.py", line 57, in get_blogs
+    return paginate(db.query(models.Blog).len(10))
+AttributeError: 'Query' object has no attribute 'len'
+INFO 2021-07-11 00:00:29,288 - Started server process [12656]
+INFO 2021-07-11 00:00:29,288 - Waiting for application startup.
+INFO 2021-07-11 00:00:29,289 - Application startup complete.
+INFO 2021-07-11 00:00:40,234 - displaying blogs
+INFO 2021-07-11 00:01:46,580 - displaying blogs
+INFO 2021-07-11 00:01:47,081 - displaying blogs
+INFO 2021-07-11 00:02:13,075 - displaying blogs
+INFO 2021-07-11 00:02:23,052 - displaying blogs
+INFO 2021-07-11 00:02:30,954 - displaying blogs
+INFO 2021-07-11 00:03:48,042 - Shutting down
+INFO 2021-07-11 00:03:48,148 - Waiting for application shutdown.
+INFO 2021-07-11 00:03:48,149 - Application shutdown complete.
+INFO 2021-07-11 00:03:48,150 - Finished server process [12656]
+INFO 2021-07-11 10:00:41,521 - Started server process [10908]
+INFO 2021-07-11 10:00:41,522 - Waiting for application startup.
+INFO 2021-07-11 10:00:41,522 - Application startup complete.
+INFO 2021-07-11 10:01:17,791 - displaying blogs
+INFO 2021-07-11 10:01:28,841 - displaying blogs
+INFO 2021-07-11 10:01:36,076 - displaying blogs
+INFO 2021-07-11 10:01:47,874 - displaying blogs
+INFO 2021-07-11 10:01:59,922 - displaying blogs
+INFO 2021-07-11 10:02:31,470 - displaying blogs
+INFO 2021-07-11 10:02:44,171 - displaying blogs
+INFO 2021-07-11 10:04:34,354 - displaying blogs
+ERROR 2021-07-11 10:06:04,110 - blog with id 30 is not found
+INFO 2021-07-11 10:18:11,585 - uvicorn.error - Started server process [18032]
+INFO 2021-07-11 10:18:11,586 - uvicorn.error - Waiting for application startup.
+INFO 2021-07-11 10:18:11,587 - uvicorn.error - Application startup complete.
+INFO 2021-07-11 10:18:48,586 - root - a new blog is created
+ERROR 2021-07-11 10:30:10,669 - root - (404, 'blog with id  25 is not available, Wrong id provided')
+INFO 2021-07-11 10:46:07,511 - uvicorn.error - Shutting down
+INFO 2021-07-11 10:46:07,624 - uvicorn.error - Waiting for application shutdown.
+INFO 2021-07-11 10:46:07,625 - uvicorn.error - Application shutdown complete.
+INFO 2021-07-11 10:46:07,626 - uvicorn.error - Finished server process [18032]
+INFO 2021-07-13 09:20:07,651 - uvicorn.error - Started server process [14108]
+INFO 2021-07-13 09:20:07,665 - uvicorn.error - Waiting for application startup.
+INFO 2021-07-13 09:20:07,665 - uvicorn.error - Application startup complete.
+INFO 2021-07-13 09:20:43,638 - root - displaying blogs
+INFO 2021-07-13 09:21:05,321 - root - displaying blogs
+INFO 2021-07-13 09:29:12,888 - root - displaying blogs
+INFO 2021-07-13 09:29:31,729 - root - displaying blogs
+INFO 2021-07-13 09:30:28,411 - uvicorn.error - Shutting down
+INFO 2021-07-13 09:30:28,521 - uvicorn.error - Waiting for application shutdown.
+INFO 2021-07-13 09:30:28,521 - uvicorn.error - Application shutdown complete.
+INFO 2021-07-13 09:30:28,522 - uvicorn.error - Finished server process [14108]
